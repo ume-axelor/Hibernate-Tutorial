@@ -69,7 +69,7 @@ public class MainApp {
             Transaction transaction = session.beginTransaction();
 
             // Updating an existing student
-            Student studentToUpdate = session.get(Student.class, 1L);
+            Student studentToUpdate = session.get(Student.class, 4L);
             if (studentToUpdate != null) {
                 studentToUpdate.setLast_name("UpdatedLastName");
                 session.update(studentToUpdate);
@@ -88,7 +88,7 @@ public class MainApp {
             Transaction transaction = session.beginTransaction();
 
             // Deleting a student
-            Student studentToDelete = session.get(Student.class, 1L);
+            Student studentToDelete = session.get(Student.class, 5L);
             if (studentToDelete != null) {
                 session.delete(studentToDelete);
                 transaction.commit();

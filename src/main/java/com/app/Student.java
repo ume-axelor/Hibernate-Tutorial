@@ -32,8 +32,6 @@ public class Student {
 	}
 	public void setDate_of_birth(Date date_of_birth) {
 		this.date_of_birth = date_of_birth;
-	}
-
-    
+	}   
     
 }
